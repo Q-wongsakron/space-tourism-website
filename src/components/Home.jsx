@@ -2,12 +2,13 @@ import React from "react";
 import HomeBg from "../assets/home/background-home-mobile.jpg";
 const Home = () => {
   return (
-    <>
-      <section
+    <div className="relative min-h-screen overflow-auto">
+      <div
         className="bg-[url(src/assets/home/background-home-mobile.jpg)]
     lg:bg-[url(src/assets/home/background-home-desktop.jpg)]
-      bg-cover bg-center h-screen "
-      >
+      bg-cover bg-center bg-no-repeat fixed inset-0 -z-10"
+      ></div>
+      <section className="min-h-screen">
         <div className="grid grid-cols-1 lg:grid-cols-2 pt-20 px-6  mx-auto place-items-center lg:h-full lg:px-0 lg:mx-32 ">
           <article className="text-center lg:text-left">
             <h5 className="text-slate-500 my-20 brightness-150 lg:my-0 lg:text-2xl">
@@ -23,14 +24,14 @@ const Home = () => {
               this world experience!
             </p>
           </article>
-          <article className="bg-white rounded-full w-[125px] h-[125px] lg:w-[225px] lg:h-[225px] flex items-center justify-center mx-auto mt-14">
+          <article className="bg-white rounded-full w-[125px] h-[125px] lg:w-[225px] lg:h-[225px] flex items-center justify-center mx-auto my-14">
             <button className="text-black text-xl tracking-widest">
               EXPLORE
             </button>
           </article>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 export default Home;
