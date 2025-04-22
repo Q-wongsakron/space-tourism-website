@@ -8,7 +8,7 @@ const Navbar = () => {
   console.log(showMenu);
 
   return (
-    <header className="absolute w-full">
+    <header className="fixed w-full">
       <section className="flex justify-between pl-5 py-8 items-center">
         <img src={logo} alt="logo" />
         <nav className="lg:bg-white/10 lg:backdrop-blur-sm lg:tracking-wider py-2 lg:px-20 px-10 ">
