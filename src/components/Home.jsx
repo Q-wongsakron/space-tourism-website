@@ -1,5 +1,5 @@
 import React from "react";
-import HomeBg from "../assets/home/background-home-mobile.jpg";
+
 const Home = () => {
   return (
     <div className="relative min-h-screen overflow-auto">
@@ -9,7 +9,7 @@ const Home = () => {
       bg-cover bg-center bg-no-repeat fixed inset-0 -z-10"
       ></div>
       <section className="min-h-screen">
-        <div className="grid grid-cols-1 lg:grid-cols-2 pt-20 px-6  mx-auto place-items-center lg:h-full lg:px-0 lg:mx-32 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 pt-20 px-6  mx-auto place-items-center lg:min-h-screen lg:px-0 lg:mx-32 ">
           <article className="text-center lg:text-left">
             <h5 className="text-slate-500 my-20 brightness-150 lg:my-0 lg:text-2xl">
               SO, YOU WANT TO TRAVEL TO
